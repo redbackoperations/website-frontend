@@ -76,7 +76,6 @@ const NavBarComponent = () => {
             >
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography
-                  textAlign="center"
                   exact
                   component={NavLink}
                   to="/aboutUs"

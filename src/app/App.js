@@ -12,8 +12,7 @@ function App() {
   return (
     <>
       <NavBarComponent />
-
-      <Grid style={{ marginTop: "1em" }}>
+      <Grid>
         <Route exact path="/" component={HomepageComponent} />
         <Route path="/aboutUs" component={AboutUsComponent} />
         <Route path="/loginIn" component={LoginComponent} />
