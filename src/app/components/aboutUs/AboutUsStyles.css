@@ -1,3 +1,39 @@
-ui-center-aligned-header{
+.ui-center-aligned-header{
   margin-top: -10%;
+}
+
+.about-us-banner {
+  background: #834C8C;
+  height: 610px;
+  position: relative;
+  text-align: center;
+}
+
+.banner-image {
+  height: 610px;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: 1000;
+}
+
+h2 {
+  margin: 0;
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
