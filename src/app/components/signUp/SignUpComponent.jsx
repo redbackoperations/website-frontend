@@ -70,30 +70,40 @@ export default function  SignUpComponent() {
             id="firstName" 
             sx={{ "& label": { color: "white" }}}
             label="First Name" 
+            inputProps={{
+              style: { color: "white" },
+            }}
             variant="outlined"
             required
             fullWidth
-            onChange={(e)=> { handleFirstNChange(e) }} />
+             />
           </div>
           <div className="signUpInputs">
             <CssTextField 
             sx={{ "& label": { color: "white" }}}
             id="lastName" 
+            inputProps={{
+              style: { color: "white" },
+            }}
             label="Last Name" 
             variant="outlined"
             required
             fullWidth
-            onChange={(e)=> { handleLastNChange(e) }}/>
+            />
           </div>
           <div className="signUpInputs">
             <CssTextField 
             sx={{ "& label": { color: "white" }}}
             id="PhNumber" 
+            inputProps={{
+              style: { color: "white" },
+            }}
             label="Phone Number" 
             variant="outlined"
+            type="number"
             required
             fullWidth
-            onChange={(e)=> { handlePhNumberChange(e) }} />
+             />
           </div>
           <div className="signUpInputs">
             <CssTextField 
@@ -107,28 +117,34 @@ export default function  SignUpComponent() {
             type="email"
             required
             fullWidth
-            onChange={(e) => { handleEmailChange(e) }} />
+            />
           </div>
           <div className="signUpInputs">
             <CssTextField
             sx={{ "& label": { color: "white" }}}
             id="password"
+            inputProps={{
+              style: { color: "white" },
+            }}
             label="Password"
             type="password"
             required
             fullWidth
-            onChange={(e) => { handlePasswordChange(e) }} />
+           />
           </div>
           <div className="signUpInputs">
             <CssTextField
             sx={{ "& label": { color: "white" }}}
             id="confPassword"
+            inputProps={{
+              style: { color: "white" },
+            }}
             label="Confirm Password"
             type="password"
             required
             fullWidth
             autoComplete="current-password"
-            onChange={(e) => { handleConfPasswordChange(e) }} />
+            />
           </div>
           <div className="signUpInputs">
             <Button
@@ -143,9 +159,6 @@ export default function  SignUpComponent() {
               variant="contained"
             >
               Create profile</Button>
-
-          
-
           </div>
         </form>
       </header>

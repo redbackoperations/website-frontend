@@ -60,7 +60,6 @@ return (
             }}
             variant="outlined" 
             style={{"borderColor":"#62656A"}}
-            value={email}
             fullWidth
             required
             >
@@ -79,10 +78,8 @@ return (
             style={{"borderColor":"#62656A"}}
             variant="outlined" 
             type="password"
-            value={password}
             fullWidth
             required
-            onChange={(e) => setPassword(e.target.value)}
           ></CssTextField>
         </Form.Group>
         </Grid>
