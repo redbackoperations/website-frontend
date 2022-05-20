@@ -8,8 +8,9 @@
       max-width: 320px;
     }
 
-    .TextField{
-      color: rgb(255, 255, 255);
+    .LoginComponent{
+      color: rgb(232,116,97);
+      text-size-adjust: 50px;
     }
   }
 

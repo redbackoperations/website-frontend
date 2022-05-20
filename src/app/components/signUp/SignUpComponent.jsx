@@ -82,135 +82,53 @@ export default function SignUpComponent() {
       setToggle(false);
     });
   }
+  
   return (
-    <div className="Signup" style={{ marginTop: "" }}>
-      {/* <header className="Signup-header">
-        <form onSubmit={(e) => { handleSubmit(e) }}>
-          <h2> RedBack SignUp Form</h2>
-          <div className="signUpInputs">
-            <CssTextField 
-            id="firstName" 
-            sx={{ "& label": { color: "white" }}}
-            label="First Name" 
-            variant="outlined"
-            required
-            fullWidth
-            onChange={(e)=> { handleFirstNChange(e) }} />
-          </div>
-          <div className="signUpInputs">
-            <CssTextField 
-            sx={{ "& label": { color: "white" }}}
-            id="lastName" 
-            label="Last Name" 
-            variant="outlined"
-            required
-            fullWidth
-            onChange={(e)=> { handleLastNChange(e) }}/>
-          </div>
-          <div className="signUpInputs">
-            <CssTextField 
-            sx={{ "& label": { color: "white" }}}
-            id="PhNumber" 
-            label="Phone Number" 
-            variant="outlined"
-            required
-            fullWidth
-            onChange={(e)=> { handlePhNumberChange(e) }} />
-          </div>
-          <div className="signUpInputs">
-            <CssTextField 
-            id="email" 
-            inputProps={{
-              style: { color: "white" },
-            }}
-            sx={{ "& label": { color: "white" }}}
-            label="Email" 
-            variant="outlined"
-            type="email"
-            required
-            fullWidth
-            onChange={(e) => { handleEmailChange(e) }} />
-          </div>
-          <div className="signUpInputs">
-            <CssTextField
-            sx={{ "& label": { color: "white" }}}
-            id="password"
-            label="Password"
-            type="password"
-            required
-            fullWidth
-            onChange={(e) => { handlePasswordChange(e) }} />
-          </div>
-          <div className="signUpInputs">
-            <CssTextField
-            sx={{ "& label": { color: "white" }}}
-            id="confPassword"
-            label="Confirm Password"
-            type="password"
-            required
-            fullWidth
-            autoComplete="current-password"
-            onChange={(e) => { handleConfPasswordChange(e) }} />
-          </div>
-          <div className="signUpInputs">
-            <Button
-                style={{
-                  borderRadius: 25,
-                  backgroundColor: "#e87461",
-                  color: "#FFFF",
-                  padding: "10px 20px",
-                  fontSize: "15px"
-                }} 
-              type="submit"
-              variant="contained"
-            >
-              Create profile</Button>
-          </div>
-        </form>
-      </header> */}
+    <div className="Signup" style={{ marginTop: "100",  padding: 100 }}>
     {  toggle ?
       <div>
+        <h1 style={{color: "#E87461",  padding: 40}}>RedBack SignUp</h1>
         <div>
-          <input
+          <TextField
             value={username}
             placeholder="username"
             onChange={(e) => setUsername(e.target.value)}
-          ></input>
+          ></TextField>
         </div>
         <div>
-          <input
+          <TextField
             value={firstname}
             placeholder="firstname"
             onChange={(e) => setFirstName(e.target.value)}
-          ></input>
+          ></TextField>
         </div>
         <div>
-          <input
+          <TextField
             value={lastName}
             placeholder="lastname"
             onChange={(e) => setLastName(e.target.value)}
-          ></input>
+          ></TextField>
         </div>
         <div>
-          <input
+          <TextField
             value={email}
             placeholder="email"
             onChange={(e) => setEmail(e.target.value)}
-          ></input>
+          ></TextField>
         </div>
         <div>
-          <input
+          <TextField
             value={password}
             placeholder="password"
             onChange={(e) => setPassword(e.target.value)}
-          ></input>
+          ></TextField>
         </div>
         <div>
-          <input
+          <TextField
             value={telePhone}
             placeholder="telephone"
             onChange={(e) => setPhNumber(e.target.value)}
-          ></input>
+          ></TextField>
         </div>
         <button
 
@@ -218,6 +136,7 @@ export default function SignUpComponent() {
         >
           Submit
         </button>
+        
       </div>
       :<h1>User sucessfully created</h1>}
     </div>

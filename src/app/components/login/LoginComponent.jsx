@@ -54,26 +54,26 @@ export default function LoginComponent(props) {
   }
 
   return (
-    <div className="LoginComponent">
-      <div style={{ padding: 30, color: "white" }}>
+    <div className="LoginComponent" extends>
+      <div style={{ padding: 180 ,color: "white"}}>
         <Grid
           container
-          spacing={1}
+          spacing={2}
           direction={"column"}
           justify={"center"}
           alignItems={"center"}
         >
-          <h1>RedBack Login</h1>
-          <input
+          <h1 style={{color: "#E87461", padding: 40}}>RedBack Login</h1>
+          <TextField
             value={email}
             placeholder="username"
             onChange={(e) => setEmail(e.target.value)}
-          ></input>
-          <input
+          ></TextField>
+          <TextField
             value={password}
             placeholder="password"
             onChange={(e) => setPassword(e.target.value)}
-          ></input>
+          ></TextField>
           <button component={NavLink} to="/" onClick={() => handleClick()}>
             Submit
           </button>
@@ -81,7 +81,7 @@ export default function LoginComponent(props) {
             {" "}
             <Link
               style={{
-                color: "#FFFF",
+                color: "#ffff",
               }}
               to={"./signUp"}
             >
@@ -89,71 +89,7 @@ export default function LoginComponent(props) {
               Create a profile{" "}
             </Link>
           </div>
-          {/* <Form >
-     
-      <Grid style={{ padding: 20 }} item xs={12} > */}
-          {/* <Form.Group size="lg" controlId="email">
-          <CssTextField label="Email"
-            type="email"
-            sx={{ "& label": { color: "white" } }}
-            inputProps={{
-              style: { color: "white" },
-            }}
-            variant="outlined" 
-            style={{"borderColor":"#62656A"}}
-            value={email}
-            fullWidth
-            required
-            onChange={(e) => setEmail(e.target.value)}
-            >
-          </CssTextField>
-        </Form.Group>
-        </Grid>
 
-        <Grid style={{ padding: 20 }} item xs={12}>
-        <Form.Group size="lg" controlId="password">
-          <CssTextField 
-            label="Password"
-            sx={{ "& label": { color: "white" }}}
-            inputProps={{
-              style: { color: "white" },
-            }}
-            style={{"borderColor":"#62656A"}}
-            variant="outlined" 
-            type="password"
-            value={password}
-            fullWidth
-            required
-            onChange={(e) => setPassword(e.target.value)}
-          ></CssTextField>
-        </Form.Group>
-        </Grid>
-        <Grid style={{ padding: 20 }} item xs={12}>
-        <Button 
-            style={{
-              borderRadius: 25,
-              backgroundColor: "#e87461",
-              color: "#FFFF",
-              padding: "10px 20px",
-              fontSize: "15px"
-             
-            }} 
-           
-          fullWidth type="submit">
-          Login
-        </Button>
-        <div className="createprofile"> <Link style={{
-              color: "#FFFF",
-            }} 
-            to={"./signUp"}>  Create a profile </Link>
-        </div>
-
-        <div>
-
-      
-        </div>
-       </Grid>
-      </Form> */}
         </Grid>
       </div>
     </div>

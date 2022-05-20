@@ -1,5 +1,6 @@
 .Signup {
     text-align: center;
+    color: white;
     }
 
   
@@ -15,4 +16,9 @@
 
     .signUpInputs {
         padding-bottom: 20px;
+        color: aliceblue;
     }
+    .TextField{
+        color: aliceblue;
+    }
+    
